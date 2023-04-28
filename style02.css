@@ -1,0 +1,272 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    margin: 0;
+    background-image: url(imagens/fundo.png);
+}
+.container {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    color: white;
+}
+.card,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9,
+.card10,
+.card11,
+.card12 {
+    background-image: linear-gradient(#746702,rgb(0, 0, 0));
+    box-shadow: rgb(0, 0, 0);
+    border-radius: 16px;
+    max-width: 313px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.card:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover,
+.card7:hover,
+.card8:hover,
+.card9:hover,
+.card10:hover,
+.card11:hover,
+.card12:hover {
+    background-image: linear-gradient(#d7c00e,#000000);
+}
+.status  {
+    height: 25px;
+    background-color: rgb(225, 197, 97);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.armadura {
+    height: 100px;
+    width: 150px;
+}
+
+.card .img,
+.card2 .img2,
+.card3 .img3,
+.card4 .img4,
+.card5 .img5,
+.card6 .img6,
+.card7 .img7,
+.card8 .img8,
+.card9 .img9,
+.card10 .img10,
+.card11 .img11,
+.card12 .img12 {
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s;
+}
+.card .img {
+    background-image: url('../cavaleiros/01mu_de_aries-removebg-preview.png');
+}
+.card2 .img2 {
+    background-image: url('cavaleiros/02aldebaran-removebg-preview.png');
+}
+.card3 .img3 {
+    background-image: url('cavaleiros/03gemeos-removebg-preview.png');
+}
+.card4 .img4 {
+    background-image: url('cavaleiros/04cancer-removebg-preview.png');
+}
+.card5 .img5 {
+    background-image: url('cavaleiros/05leao-removebg-preview.png');
+}
+.card6 .img6 {
+    background-image: url('cavaleiros/06shaka-removebg-preview.png');
+}
+.card7 .img7 {
+    background-image: url('cavaleiros/07libra-removebg-preview.png');
+}
+.card8 .img8 {
+    background-image: url('cavaleiros/08escorpiao-removebg-preview.png');
+}
+.card9 .img9 {
+    background-image: url('cavaleiros/09aioros_sagitario-removebg-preview.png');
+}
+.card10 .img10 {
+    background-image: url('cavaleiros/10capricornio-removebg-preview.png');
+}
+.card11 .img11 {
+    background-image: url('inteiro/11camus_inteiro.png');
+}
+.card12 .img12 {
+    background-image: url('cavaleiros/12peixes-removebg-preview.png');
+}
+
+.card:hover .img,
+.card2:hover .img2,
+.card3:hover .img3,
+.card4:hover .img4,
+.card5:hover .img5,
+.card6:hover .img6,
+.card7:hover .img7,
+.card8:hover .img8,
+.card9:hover .img9,
+.card10:hover .img10,
+.card11:hover .img11,
+.card12:hover .img12 {
+    transform: scale(1.1);
+}
+
+/*
+.card .img span,
+.card2 .img2 span,
+.card3 .img3 span,
+.card4 .img4 span {
+    font-size: 112px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}*/
+
+.card .content,
+.card2 .content,
+.card3 .content,
+.card4 .content,
+.card5 .content,
+.card6 .content,
+.card7 .content,
+.card8 .content,
+.card9 .content,
+.card10 .content,
+.card11 .content,
+.card12 .content {
+    padding: 0 20px;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+.card:hover .content,
+.card2:hover .content,
+.card3:hover .content,
+.card4:hover .content,
+.card5:hover .content,
+.card6:hover .content,
+.card7:hover .content,
+.card8:hover .content,
+.card9:hover .content,
+.card10:hover .content,
+.card11:hover .content,
+.card12:hover .content {
+    height: 230px;
+    padding: 20px;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card .content,
+.card2 .content,
+.card3 .content,
+.card4 .content,
+.card5 .content,
+.card6 .content,
+.card7 .content,
+.card8 .content,
+.card9 .content,
+.card10 .content,
+.card11 .content,
+.card12 .content {
+    margin-bottom: 0;
+}
+
+.card .content .title,
+.card2 .content .title,
+.card3 .content .title,
+.card4 .content .title,
+.card5 .content .title,
+.card6 .content .title,
+.card7 .content .title,
+.card8 .content .title,
+.card9 .content .title,
+.card10 .content .title,
+.card11 .content .title,
+.card12 .content .title {
+ font-size: 21px;
+ font-weight: bold;
+}
+
+.card .content .desc,
+.card2 .content .desc,
+.card3 .content .desc,
+.card4 .content .desc,
+.card5 .content .desc,
+.card6 .content .desc,
+.card7 .content .desc,
+.card8 .content .desc,
+.card9 .content .desc,
+.card10 .content .desc,
+.card11 .content .desc,
+.card12 .content .desc {
+    font-size: 10px;
+    font-weight: 200;
+    opacity: .7;
+}
+
+p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.card .arrow,
+.card2 .arrow,
+.card3 .arrow,
+.card4 .arrow,
+.card5 .arrow,
+.card6 .arrow,
+.card7 .arrow,
+.card8 .arrow,
+.card9 .arrow,
+.card10 .arrow,
+.card11 .arrow,
+.card12 .arrow {
+    padding: 20px;
+    font-size: 30px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card:hover .arrow,
+.card2:hover .arrow,
+.card3:hover .arrow,
+.card4:hover .arrow,
+.card5:hover .arrow,
+.card6:hover .arrow,
+.card7:hover .arrow,
+.card8:hover .arrow,
+.card9:hover .arrow,
+.card10:hover .arrow,
+.card11:hover .arrow,
+.card12:hover .arrow
+ {
+    transform: rotate(0);
+}
+
+
